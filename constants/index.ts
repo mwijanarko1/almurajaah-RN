@@ -1,23 +1,13 @@
-export const COLORS = {
-  primary: '#007AFF',
-  secondary: '#6B7280',
-  success: '#10B981',
-  warning: '#F59E0B',
-  error: '#EF4444',
-  background: '#FFFFFF',
-  text: '#1F2937',
-  textSecondary: '#6B7280',
-} as const;
+/**
+ * Theme constants for Al Muraja'ah app
+ * All colors and design tokens are centralized here to match the deployed Swift app
+ */
 
-export const SPACING = {
-  xs: 4,
-  sm: 8,
-  md: 16,
-  lg: 24,
-  xl: 32,
-  xxl: 48,
-} as const;
+export { COLORS, FONT_FAMILIES, SPACING } from './theme';
 
+/**
+ * Font size tokens
+ */
 export const FONT_SIZES = {
   xs: 12,
   sm: 14,
@@ -29,12 +19,16 @@ export const FONT_SIZES = {
 } as const;
 
 /**
- * API base URL is read from the EXPO_PUBLIC_API_BASE_URL environment variable.
- * Set this in your `.env` file before running the app.
- * Example: EXPO_PUBLIC_API_BASE_URL=https://api.myapp.com
+ * Status color aliases - matches the deployed Swift app revision status colors
+ * Use these for semantic clarity when indicating revision state
  */
-export const API_ENDPOINTS = {
-  baseURL: process.env['EXPO_PUBLIC_API_BASE_URL'] ?? '',
-  users: '/users',
-  posts: '/posts',
+export const STATUS_COLORS = {
+  /** On track / Easy - green */
+  onTrack: '#19a620',
+  /** Approaching due / Medium - yellow */
+  approaching: '#f5c82f',
+  /** Needs attention / Hard - orange */
+  attention: '#e87a09',
+  /** Overdue / Again - red */
+  overdue: '#a61f1f',
 } as const;

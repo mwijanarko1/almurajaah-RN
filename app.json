@@ -1,29 +1,29 @@
 {
   "expo": {
-    "name": "expo-rn-template",
-    "slug": "expo-rn-template",
-    "scheme": "exporntemplate",
+    "name": "Al Muraja'ah",
+    "slug": "al-murajaah",
+    "scheme": "almurajaah",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "orientation": "default",
+    "icon": "./assets/Al Muraja'ah Logo.png",
+    "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/Al Muraja'ah Logo.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#f4ebdd"
     },
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/Al Muraja'ah Logo.png",
         "backgroundColor": "#ffffff"
       },
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/Al Muraja'ah Logo.png"
     },
     "plugins": [
       "expo-router"
